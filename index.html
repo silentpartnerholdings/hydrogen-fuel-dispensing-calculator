@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNO Intelligence - Hydrogen Refueling Station Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HNO Intelligence</div>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <h1>Hydrogen Refueling Station Calculator</h1>
+            <p class="subtitle">Optimize your hydrogen refueling station design</p>
+            <form id="refuelingForm">
+                <div class="form-group">
+                    <label for="numberOfVehicles"><i class="fas fa-car"></i> Number of Vehicles:</label>
+                    <input type="number" id="numberOfVehicles" name="numberOfVehicles" required min="1" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="vehicleModel"><i class="fas fa-info-circle"></i> Vehicle Model (optional):</label>
+                    <input type="text" id="vehicleModel" name="vehicleModel">
+                </div>
+                <div class="form-group">
+                    <label for="fuelCapacity"><i class="fas fa-gas-pump"></i> Fuel Capacity (kg):</label>
+                    <input type="number" id="fuelCapacity" name="fuelCapacity" required min="0" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="vehiclePressure"><i class="fas fa-tachometer-alt"></i> Required Vehicle Pressure (bar):</label>
+                    <input type="number" id="vehiclePressure" name="vehiclePressure" required min="0" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="emptyPercentage"><i class="fas fa-battery-empty"></i> Empty Percentage on Return (%):</label>
+                    <input type="number" id="emptyPercentage" name="emptyPercentage" required min="0" max="100" step="1">
+                </div>
+                <div class="form-group">
+                    <label for="returnFrequency"><i class="fas fa-redo"></i> Return Frequency (hours):</label>
+                    <input type="number" id="returnFrequency" name="returnFrequency" required min="0" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="refuelTime"><i class="fas fa-clock"></i> Required Refuel Time (minutes):</label>
+                    <input type="number" id="refuelTime" name="refuelTime" required min="0" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="deliveryPressure"><i class="fas fa-truck"></i> Hydrogen Delivery Pressure (bar):</label>
+                    <input type="number" id="deliveryPressure" name="deliveryPressure" required min="0" step="1">
+                </div>
+                <button type="submit"><i class="fas fa-calculator"></i> Calculate</button>
+            </form>
+            <div id="result" class="hidden">
+                <h2><i class="fas fa-cogs"></i> Optimal Hydrogen Dispenser Configuration</h2>
+                <div id="configuration"></div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2023 HNO Intelligence. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
