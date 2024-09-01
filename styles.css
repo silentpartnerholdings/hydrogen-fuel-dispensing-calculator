@@ -1,15 +1,15 @@
 :root {
-    --primary-color: #0072bc;
-    --secondary-color: #00a0e3;
-    --background-color: #f5f5f5;
-    --text-color: #333;
+    --primary-color: #3498db; /* Updated primary color to match */
+    --secondary-color: #2ecc71; /* Updated secondary color */
+    --background-color: #ecf0f1; /* Updated background color */
+    --text-color: #34495e; /* Updated text color */
     --white: #ffffff;
-    --header-bg-color: #34495e; /* Updated to match the new header style */
-    --header-text-color: #ffffff; /* Updated to match the new header style */
+    --header-bg-color: #34495e; /* Header background color */
+    --header-text-color: #ffffff; /* Header text color */
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -18,51 +18,29 @@ body {
 }
 
 header {
-    background-color: var(--header-bg-color); /* Changed to match the new header style */
-    color: var(--header-text-color); /* Changed to match the new header style */
-    text-align: center; /* Updated to match the new header style */
+    background-color: var(--header-bg-color); /* Updated header background */
+    color: var(--header-text-color); /* Updated header text color */
+    text-align: center; /* Center text */
     padding: 1rem 0;
 }
 
 .header-content h1 {
     margin: 0;
-    font-size: 2.5rem; /* Updated to match the new header style */
+    font-size: 2.5rem;
 }
 
 .header-content p {
     margin: 0.5rem 0 0;
-    font-size: 1.2rem; /* Updated to match the new header style */
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
+    font-size: 1.2rem;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 20px;
     background-color: var(--white);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 h1 {
@@ -97,7 +75,7 @@ form {
 label {
     font-weight: 500;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 label i {
@@ -108,7 +86,7 @@ input[type="number"],
 input[type="text"] {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid #bdc3c7; /* Updated border color */
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -117,8 +95,8 @@ input[type="text"] {
 input[type="number"]:focus,
 input[type="text"]:focus {
     outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(0, 160, 227, 0.2);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* Updated shadow color */
 }
 
 button {
@@ -133,7 +111,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); /* Updated hover color */
 }
 
 button:active {
@@ -146,7 +124,7 @@ button i {
 
 #result {
     background-color: var(--white);
-    border: 1px solid #ddd;
+    border: 1px solid #bdc3c7;
     padding: 2rem;
     border-radius: 10px;
     font-size: 1.1rem;
@@ -160,7 +138,7 @@ button i {
 }
 
 #configuration {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     white-space: pre-wrap;
 }
 
