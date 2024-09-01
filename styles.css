@@ -18,20 +18,24 @@ body {
 }
 
 header {
-    background-color: var(--header-bg-color); /* Updated header background */
-    color: var(--header-text-color); /* Updated header text color */
-    text-align: center; /* Center text */
-    padding: 1rem 0;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 2rem 0; /* Increased padding for a more substantial header */
 }
 
 .header-content h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increased font size to match the example */
+    font-weight: 700; /* Bold font for emphasis */
+    letter-spacing: 1.5px; /* Added letter-spacing for better readability */
 }
 
 .header-content p {
     margin: 0.5rem 0 0;
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased subtitle font size */
+    font-weight: 300; /* Lighter weight for the subtitle */
+    letter-spacing: 1px; /* Added letter-spacing */
 }
 
 .container {
