@@ -18,41 +18,38 @@ body {
 }
 
 header {
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
-    text-align: center;
-    padding: 2rem 0; /* Increased padding for a more substantial header */
+    background-color: var(--header-bg-color); /* Changed to match the new header style */
+    color: var(--header-text-color); /* Changed to match the new header style */
+    text-align: center; /* Updated to match the new header style */
+    padding: 1rem 0;
 }
 
 .header-content h1 {
     margin: 0;
-    font-size: 3rem; /* Increased font size to match the example */
-    font-weight: 700; /* Bold font for emphasis */
-    letter-spacing: 1.5px; /* Added letter-spacing for better readability */
+    font-size: 2.5rem; /* Updated to match the new header style */
 }
 
 .header-content p {
     margin: 0.5rem 0 0;
-    font-size: 1.5rem; /* Increased subtitle font size */
-    font-weight: 300; /* Lighter weight for the subtitle */
-    letter-spacing: 1px; /* Added letter-spacing */
+    font-size: 1.2rem; /* Updated to match the new header style */
 }
 
-.container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 20px;
-    background-color: var(--white);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-h1 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    text-align: center;
+.logo {
+    font-size: 2.5rem; /* Adjusted font size to match the production calculator */
+    font-weight: 700; /* Bold font for emphasis */
+    letter-spacing: 1.5px; /* Added letter-spacing for better readability */
+    color: var(--header-text-color); /* Ensuring the logo text matches the header color */
+    margin: 0; /* Removing any default margins */
+    line-height: 1; /* Aligning line height for vertical centering */
 }
 
 .subtitle {
