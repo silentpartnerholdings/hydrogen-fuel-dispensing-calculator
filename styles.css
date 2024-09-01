@@ -44,9 +44,12 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
+    font-size: 2.5rem; /* Adjusted font size to match the production calculator */
+    font-weight: 700; /* Bold font for emphasis */
+    letter-spacing: 1.5px; /* Added letter-spacing for better readability */
+    color: var(--header-text-color); /* Ensuring the logo text matches the header color */
+    margin: 0; /* Removing any default margins */
+    line-height: 1; /* Aligning line height for vertical centering */
 }
 
 .container {
