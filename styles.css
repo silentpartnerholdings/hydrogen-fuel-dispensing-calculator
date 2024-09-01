@@ -16,9 +16,12 @@ body {
 }
 
 header {
-    background-color: var(--white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
     padding: 1rem 0;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
 }
 
 nav {
@@ -33,6 +36,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
+    text-align: center;
     color: var(--primary-color);
 }
 
