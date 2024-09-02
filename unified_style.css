@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-bg-color: #34495e;
+    --header-text-color: #fff;
+    --container-bg-color: #fff;
+    --section-bg-color: #ecf0f1;
+    --label-color: #34495e;
+    --input-border-color: #bdc3c7;
+    --output-value-color: #2c3e50;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-content p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: var(--container-bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: var(--label-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.input-section, .output-section {
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.form-group, .result-item {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--label-color);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--header-text-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+.output-label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--label-color);
+}
+
+.output-value {
+    font-size: 18px;
+    color: var(--output-value-color);
+}
+
+.fas, .far {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+
+    .output-value {
+        font-size: 16px;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
