@@ -1,15 +1,15 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2980b9;
-    --background-color: #f4f4f4;
-    --text-color: #333;
-    --header-bg-color: #34495e;
-    --header-text-color: #fff;
-    --container-bg-color: #fff;
-    --section-bg-color: #ecf0f1;
-    --label-color: #34495e;
-    --input-border-color: #bdc3c7;
-    --output-value-color: #2c3e50;
+    --primary-color: #007bff; /* Updated to match HNOIntl.com */
+    --secondary-color: #0056b3; /* A darker shade of the primary color for hover states */
+    --background-color: #f8f9fa; /* Light gray background similar to HNOIntl.com */
+    --text-color: #212529; /* Darker text color for readability */
+    --header-bg-color: #343a40; /* Dark gray for the header background */
+    --header-text-color: #ffffff; /* White text in the header */
+    --container-bg-color: #ffffff; /* White background for containers */
+    --section-bg-color: #e9ecef; /* Light gray background for sections */
+    --label-color: #495057; /* Dark gray for labels */
+    --input-border-color: #ced4da; /* Light gray for input borders */
+    --output-value-color: #343a40; /* Dark gray for output values */
 }
 
 body {
