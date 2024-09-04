@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <i class="fas fa-tachometer-alt"></i> Use a dispenser with a minimum flow rate of <span>${Math.ceil(dispenserFlowRate)} kg/hour</span>
             </div>
             
-            <p class="note"><i class="fas fa-info-circle"></i> Note: This calculation is based on simplified models and assumptions. For a real-world implementation, consult with hydrogen refueling experts and consider safety factors, local regulations, and specific equipment specifications.</p>
+            <p class="note"><i class="fas fa-info-circle"></i> Note: This calculation is based on simplified models and assumptions. For a real-world implementation, consult with hydrogen refueling experts at HNOI and consider safety factors, local regulations, and specific equipment specifications.</p>
         `;
 
         configuration.innerHTML = configText;
